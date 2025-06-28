@@ -1,0 +1,70 @@
+<!-- create.html
+the creators platform for logins-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Creator Login</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+         <ul>
+             <li><a href="http://127.0.0.1/HipHop%20Website/index.html"> Home </a></li>
+                <li><a href="http://127.0.0.1/HipHop%20Website/about.html"> About Us </a></li>
+                <li><a href="http://127.0.0.1/HipHop%20Website/read.html"> Read All About it </a></li>
+                <li><a href="http://127.0.0.1/HipHop%20Website/login.html"> Login </a></li>
+         </ul>
+      </nav>
+      <h1> Login </h1>
+      <div class="login">
+        <form method="post" name="login" action="creatorProcess.php">
+            <input type='hidden' name='create' value=True />
+            <label> Creator Username: </label><br />
+            <input type="text" id="cUsername" name="cUsername"> <br/>
+            <label> Creator Password: </label><br />
+            <input type="password" id="cPass" name="cPass"> <br/>
+            <button type="submit">Login</button>
+
+            <!-- Remember me not implemented yet-->
+            <label>
+               <input type="checkbox" checked="checked" name="remember"> Remember Me
+            </label>
+        </div>
+        <div class="loginbutton">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw"> Forgot your <a href="#">password?</a></span><br/>
+            <!--<label> Need an account?</label><br/>
+            <button type="button" class="signupbtn"> Sign Up</button> -->
+         </div>
+        </form>
+
+        <div>
+            <form action="creatorProcess.php">
+                <div class="signup">
+                    <h1> Sign Up</h1>
+                    <p> Sign up to begin creating on The Experience!</p>
+                    <hr>
+
+                    <label> Full Name: </label>
+                    <input type="text" id="fullname" name="fullname"><br/>
+                    <label> Username: </label>
+                    <input type="text" id="cUsername" name="cUsername"><br/>
+                    <label> Email: </label>
+                    <input type="text" id="cEmail" name="cEmail"><br/>
+                    <label> Password: </label>
+                    <input type="password" id="cPass" name="cPass"><br/>
+
+                    <!-- Terms of Service -->
+                  <div class="clearfix">
+                     <button type="button" class="cancelbtn"> Cancel</button>
+                     <button type="button" class="signupbtn"> Sign Up</button>
+                  </div>
+
+                </div>
+            </form>
+        </div>
+      
+    </body>
+</html>
